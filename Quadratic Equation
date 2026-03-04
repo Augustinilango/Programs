@@ -1,0 +1,14 @@
+a=float(input("Enter a: "))
+b=float(input("Enter b: "))
+c=float(input("Enter c: "))
+d=(b*b)-4*a*c
+if(d<0):
+    d=-d
+    Real=(-(b/(2*a)))
+    Img=((d**0.5)/(2*a))
+    print Real,"+j",Img
+    print Real,"-j",Img
+else:
+    sol1=(-b+(d**0.5))/(2*a)
+    sol2=(-b-(d**0.5))/(2*a)
+    print "Roots are :",sol1,sol2
