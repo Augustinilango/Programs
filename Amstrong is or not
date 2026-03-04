@@ -1,0 +1,11 @@
+n=int(input("Enter a givem input :"))
+rev=0
+org=n
+while(n>0):
+   r=n%10
+   rev=rev+(r*r*r)
+   n=n/10
+if (org==rev):
+   print "the given input is amstrong."
+else:
+   print "the given input is not amstrong."
