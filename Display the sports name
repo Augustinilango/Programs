@@ -1,0 +1,12 @@
+temp=str(input("Enter the temperature is warm or cold :"))
+hum=str(input("Enter the humantity is dry or humid :"))
+if(temp=="warm" and hum=="dry"):
+   print ("playing basketball")
+elif(temp=="warm" and hum=="humid"):
+   print ("play tennis")
+elif(temp=="cold" and hum=="dry"):
+   print ("play cricket")
+elif(temp=="cold" and hum=="humid"):
+   print ("swim")
+else:
+   print ("invalid")
