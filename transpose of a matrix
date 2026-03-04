@@ -1,0 +1,10 @@
+r=int(input("Enter the rows:"))
+c=int(input("Enter the column :"))
+print("Enter the values one by one")
+mat1=[[int(input()) for x in range(c)] for y in range(r)]
+trans = [[0 for _ in range(r)] for _ in range(c)]
+for i in range(len(mat1)):
+    for j in range (len(mat1[0])):
+        trans[j][i]=mat1[i][j]
+for k in trans:
+    print(k)
