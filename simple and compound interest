@@ -1,0 +1,9 @@
+p=float(input("Enter the principle :"))
+n=float(input("Enter the Years :"))
+r=float(input("Enter the rate of interest :"))
+t=float(input("Enter the time :"))
+si=(p*t*r)/100
+a=(p*(1+(r/n)/100)**(n*t))
+ci=a-p
+print "The simple interest :",si
+print "The compound interest :",ci
