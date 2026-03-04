@@ -1,0 +1,8 @@
+list=[10,4,6,2,7]
+update=[num + 5 for num in list]
+large=max(update)
+small=min(update)
+print("Original List: ",list)
+print("Updated List:",update)
+print("Maximum Value:",large)
+print("Miniimum Value:",small)
