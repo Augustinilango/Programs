@@ -1,0 +1,19 @@
+a=int(input("Enter the value 0 or 1 :"))
+if(a==1):
+   b=float(input("Enter the base value :"))
+   c=float(input("Enter the height value :"))
+   if(b<=0 or c<=0):
+      print "invalid"
+   else:
+      area=(b*c)/2
+      print "Area=",area
+elif(a==0):
+   x=float(input("Enter the side1 value :"))
+   y=float(input("Enter the side2 value :"))
+   z=float(input("Enter the side3 value :"))
+   if(x<=0 or y<=0 or z<=0):
+      print "invalid"
+   else:
+      s=(x+y+z)/2
+      area=(s*(s-x)*(s-y)*(s-z))**0.5
+      print "Area=",area
