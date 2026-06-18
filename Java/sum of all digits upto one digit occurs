@@ -1,0 +1,19 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the input:");
+        int a=sc.nextInt();
+        while (a>9){
+            int total=0;
+            while(a>0){
+                int last=a%10;
+                total=total+last;
+                a/=10;
+            }
+            a=total;
+        }
+        System.out.println("Single Digit:"+a);
+    }
+}
